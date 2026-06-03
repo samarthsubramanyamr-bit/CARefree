@@ -6,93 +6,81 @@
     <title>CARefree | Doorstep Car Maintenance</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-family/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
+<body class="bg-white text-slate-700 font-sans antialiased selection:bg-blue-600 selection:text-white flex flex-col min-h-screen">
 
-    <!-- Main Container -->
-    <div class="min-h-screen flex flex-col justify-between relative overflow-hidden px-4 sm:px-6 lg:px-8 py-8">
-        
-        <!-- Decorative Background Glows -->
-        <div class="absolute top-[-10%] left-[-10%] w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] rounded-full bg-amber-500/10 blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] rounded-full bg-blue-500/10 blur-3xl pointer-events-none"></div>
-
-        <!-- Header -->
-        <header class="max-w-7xl mx-auto w-full flex justify-between items-center z-10">
+    <!-- Header / Navbar (Blue Background for White Logo) -->
+    <header class="bg-blue-600 shadow-md w-full px-4 sm:px-6 lg:px-8 py-4 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <span class="text-2xl font-black tracking-wider text-white">CAR<span class="text-amber-500">efree</span></span>
+                <span class="text-2xl font-black tracking-wider text-white">CARefree</span>
             </div>
-            <span class="text-xs sm:text-sm font-medium bg-slate-800 text-slate-300 px-3 py-1.5 rounded-full border border-slate-700/50 backdrop-blur-sm">
+            <span class="text-xs sm:text-sm font-semibold bg-blue-700 text-blue-100 px-3 py-1.5 rounded-full border border-blue-500/30">
                 🚀 Coming Soon
             </span>
-        </header>
+        </div>
+    </header>
 
-        <!-- Hero Section -->
-        <main class="max-w-4xl mx-auto w-full my-auto py-12 z-10 flex flex-col items-center text-center">
-            
-            <!-- Headline -->
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                Vehicle maintenance, <br class="hidden sm:inline">
-                <span class="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">right at your doorstep.</span>
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 flex-grow flex flex-col justify-center">
+        
+        <!-- Hero Headline Area -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+                Doorstep Car Maintenance <br class="hidden sm:inline">
+                <span class="text-blue-600">So that you can live carefree.</span>
             </h1>
+        </div>
 
-            <!-- Subtitle / Value Prop -->
-            <p class="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mb-8 leading-relaxed">
-                No more wasting hours searching for rare service centers or driving 70+ km just for a routine checkup. Book certified mechanics and track your records effortlessly. 
-                <strong class="text-amber-400 block mt-2">So that you can live carefree.</strong>
-            </p>
-
-            <!-- CTA / Beta Signup Form -->
-            <div class="w-full max-w-md bg-slate-800/50 p-6 rounded-2xl border border-slate-700/60 backdrop-blur-md shadow-xl mb-12">
-                <h3 class="text-sm font-semibold uppercase tracking-wider text-amber-500 mb-3">Join our Prototype Beta</h3>
-                <p class="text-xs text-slate-400 mb-4">Be the first to get access to our exclusive WhatsApp booking group with top-tier local mechanics.</p>
-                
-                <form class="flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault(); alert('Thank you for joining the waitlist!');">
-                    <input type="email" placeholder="Enter your email address" required 
-                        class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 text-sm transition-all">
-                    <button type="submit" 
-                        class="w-full sm:w-auto px-5 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-slate-950 font-bold text-sm tracking-wide transition-all shadow-lg shadow-amber-500/20 active:scale-98 cursor-pointer whitespace-nowrap">
-                        Join Waitlist
-                    </button>
-                </form>
-            </div>
-
-            <!-- Founder's Story Section -->
-            <div class="w-full text-left bg-slate-800/30 p-6 sm:p-8 rounded-2xl border border-slate-800 backdrop-blur-xs">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="h-10 w-10 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-500 font-bold">
-                        S
-                    </div>
-                    <div>
-                        <h4 class="text-white font-semibold text-sm sm:text-base">Samarth</h4>
-                        <p class="text-xs text-slate-400">Founder, CARefree & Student at Vydehi School of Excellence</p>
-                    </div>
+        <!-- Founder's Story Section (Your exact content preserved) -->
+        <div class="w-full bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200/60 shadow-xs mb-10">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">
+                    S
                 </div>
-                
-                <div class="space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed">
-                    <p>
-                        Living in Bangalore, a city notorious for its traffic, I realized there is a critical gap in proper doorstep service for vehicle maintenance, specifically cars. 
-                    </p>
-                    <p>
-                        My family owns a car brand that has very few service centers left in India. Like many owners of brands like Chevrolet, Ford, or luxury imports, we often have to rely on generic local garages or make-do with other brand service centers. For people living in Tier 2/3 cities, it's even worse—sometimes requiring a 70+ km journey just to find a center. 
-                    </p>
-                    <p>
-                        <strong>CARefree changes that.</strong> We are launching a doorstep car maintenance and repair service alongside an online digital journal for your car’s service history. We are starting lean with a verified WhatsApp community connecting you directly to skilled local mechanics. 
-                    </p>
+                <div>
+                    <h4 class="text-slate-900 font-bold text-base">Samarth</h4>
+                    <p class="text-xs text-slate-500">Founder, CARefree | Student of Vydehi School of Excellence</p>
                 </div>
             </div>
+            
+            <!-- Unchanged Content Block -->
+            <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
+                <p>
+                    I am Samarth, a student founder of CARefree. A student of Vydehi School of Excellence
+                </p>
+                <p>
+                    Living in Bangalore, a city of traffic, I realised that there is a lack of a proper doorstep service for Vehicle maintenance, specifically cars. My family, owning a car which has very less service centres India, have to go to local garages or make-do with other brand service centres. Car brands like Chevrolet, Ford and some luxury brands have very less service centres in India. Other than this, people who live in Tier 2/3 cities sometimes have to travel 70+km to find a service centre. There is also a lot of time spent in maintaining a car. That is why, I have come up with CARefree, a doorstep car maintenance service so that you don't have to spend hours looking for a service centre and hours again going to the service centre. With CARefree, you can book doorstep car maintenance service and even get repair works get done at your doorstep. Soon, there will also be an online journal of your car's maintenance records. I will be starting with a prototype, which is a WhatsApp group with Mechanics from local garages and people who want to use the service. In the group, people can contact the mechanics and book services at their doorstep. No need to travel long distances anymore or spend hours looking for a service centre for your car.
+                </p>
+                <p class="font-bold text-blue-600 text-lg mt-2">
+                    So that you can live carefree.
+                </p>
+            </div>
+        </div>
 
-        </main>
+        <!-- CTA / Waitlist Form (Moved to the Bottom) -->
+        <div class="w-full max-w-xl mx-auto bg-blue-50 p-6 sm:p-8 rounded-2xl border border-blue-100 shadow-md text-center">
+            <h3 class="text-lg font-bold text-blue-900 mb-2">Join our Prototype Beta</h3>
+            <p class="text-sm text-blue-700 mb-6">Be the first to get access to our WhatsApp booking group with local mechanics.</p>
+            
+            <form class="flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault(); alert('Thank you for joining the waitlist!');">
+                <input type="email" placeholder="Enter your email address" required 
+                    class="w-full px-4 py-3 rounded-xl bg-white border border-blue-200 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 text-sm transition-all">
+                <button type="submit" 
+                    class="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm tracking-wide transition-all shadow-sm active:scale-98 cursor-pointer whitespace-nowrap">
+                    Join Waitlist
+                </button>
+            </form>
+        </div>
 
-        <!-- Footer -->
-        <footer class="max-w-7xl mx-auto w-full text-center pt-8 border-t border-slate-800/60 z-10">
-            <p class="text-xs text-slate-500">
-                &copy; 2026 CARefree. Built with ❤️ in Bangalore. All rights reserved.
-            </p>
-        </footer>
+    </main>
 
-    </div>
+    <!-- Footer -->
+    <footer class="w-full text-center py-6 border-t border-slate-100 bg-slate-50 mt-auto">
+        <p class="text-xs text-slate-500">
+            &copy; 2026 CARefree. Built in Bangalore. All rights reserved.
+        </p>
+    </footer>
 
 </body>
 </html>
